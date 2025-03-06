@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-size: 20px;
+    color: purple;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(223, 223, 223);
+    font-size: 24px;
+}
+
+.top_nav {
+    display: flex;
+    justify-content: end;
+    background-color: black;
+    padding-block: 8px;
+    padding-inline: 48px;
+}
+
+.top_nav ul {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.top_nav .profile {
+    width: 22px;
+    height: 22px;
+    stroke-width: 2px;
+}
+
+.top_nav .logo {
+    font-weight: bolder;
+}
+
+.bottom_nav {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-block: 8px;
+    padding-inline: 16px;
+}
+
+.bottom_nav ul {
+    display: flex;
+    display: none;
+}
+
+.bottom_nav button {
+    width: 28px;
+    height: fit-content;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.bottom_nav button:hover {
+    color: red;
+}
+
+.hero {
+    position: relative;
+    overflow-y: hidden; 
+    color: rgb(231, 231, 231);
+}
+
+.hero img { 
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 9/11;
+    object-position: top;
+}
+
+.hero article {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    text-align: center;
+    height: 50%;
+    padding: 18px;
+}
+
+article h2 {
+    font-size: 75px;
+    font-weight: bolder;
+}
+
+article p {
+    padding-inline: 16px;
+    font-size: 18px;
+    margin-block: 8px;
+    font-weight: 500;
+}
+
+article a {
+    margin-top: 16px;
+    display: block;
+    padding-block: 12px;
+    border: solid white 2px;
+    width: 90%;
+    margin-inline: auto;
+    font-size: 16px;
+}
